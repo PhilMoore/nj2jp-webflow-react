@@ -3,8 +3,8 @@ import React from 'react';
 import { WebflowJs } from './assets/utils';
 
 import {
-  HdrVipInfo,
-  DateInfo,
+HdrVipInfo,
+DateInfo,
 } from '../../components';
 
 const SubHdrFlexSplit = () => {

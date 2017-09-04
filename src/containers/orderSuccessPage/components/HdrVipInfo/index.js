@@ -5,8 +5,12 @@ import { WebflowJs } from './assets/utils';
 const HdrVipInfo = () => {
   WebflowJs(); //eslint-disable-line
 
+  const {
+    trackingNo,
+    } = this.props;
+
   return (
-    <p className="packaging-info packaging-info__tracking">Tracking #: 123123123123123
+    <p className="packaging-info packaging-info__tracking">Tracking #: {trackingNo}
     </p>
   );
 };
