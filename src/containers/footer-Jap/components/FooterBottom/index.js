@@ -11,14 +11,14 @@ const FooterBottom = () => {
       <div className="footer__bottom">
         <div className="content--phone-landscape footer-2__content">
           <div className="footer-2__text text--phone-landscape">
-            <p className="column-left__text text--phone-landscape text--phone-portrait text--tablet">Copyright
+            <p className="column-left__text text--phone-landscape text--phone-portrait text--tablet">著作権
               <FontAwesome name="copyright" />
               &nbsp;2017
             </p>
-            <p className="column-right__text text--phone-landscape text--tablet text-phone-portrait">Made with
+            <p className="column-right__text text--phone-landscape text--tablet text-phone-portrait">で作った
               <em className="emphasized-text-6">
                 <FontAwesome name="heart" />
-              </em>&nbsp;by Stackinet LLC. Development Team
+              </em>&nbsp;〜によって Stackinet LLC. 開発チーム
             </p>
           </div>
           <img className="footer__payments--image image--phone-landscape image--phone-portrait image--tablet" role="presentation" sizes="(max-width: 479px) 95vw, (max-width: 767px) 72vw, (max-width: 991px) 60vw, 28vw" src="images/square-ssl-logo-long.png" />

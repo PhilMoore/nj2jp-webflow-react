@@ -5,8 +5,12 @@ import { WebflowJs } from './assets/utils';
 const DateInfo = () => {
   WebflowJs(); //eslint-disable-line
 
+  const {
+    orderDate,
+    } = this.props;
+
   return (
-    <p className="date--phone-portrait packaging-info packaging-info__date">Date: Tuesday, March, 7th 2017
+    <p className="date--phone-portrait packaging-info packaging-info__date">Date: {orderDate}
     </p>
   );
 };

@@ -3,26 +3,56 @@ import React from 'react';
 import { WebflowJs } from './assets/utils';
 
 import {
-  InvoiceHdr,
-  SubHdrFlexSplit,
-  SubHdrItalic,
 } from '../../components';
 
 const OrderInvoice = () => {
   WebflowJs(); //eslint-disable-line
 
+  const {
+    trackingNo,
+    orderDate,
+    qty,
+    productTitle,
+    nicotineStr,
+    sku,
+    price,
+    subTotal,
+    tax,
+    shipping,
+    orderTotal,
+  } = this.props;
+
   return (
     <div>
-      <InvoiceHdr />
+      <div>
+        <div className="order-success__header--mobile-land order-success__image w-container">
+          <p className="order-sucsess--image">
+          </p>
+          <div className="order-success__text">
+            <h1 className="content--tablet order-success__image order-success__title">Order successfully submitted
+            </h1>
+            <p className="content--mobile-land content--mobile-port content--tablet order-success__content order-success__image">The invoice below has been sent to your email.
+            </p>
+            <p className="content--mobile-land content--mobile-port content--tablet order-success__content order-success__image">You will receive your Tracking # via email, once your order has been shipped.
+            </p>
+          </div>
+        </div>
+      </div>
       <div>
         <div className="packaging-info w-container">
           <div className="packaging-info packaging-info__orderprice">
-            <SubHdrFlexSplit />
-            <SubHdrItalic />
-            <div className="order-details--phone-landscape packaging-info packing-info__order-details">
-              <p className="order-details order-details__order-no">Order #: [order-no]
+            <div className="date-invoice--phone-landscape packaging-info packaging-info__date-invoice">
+              <p className="packaging-info packaging-info__tracking">Tracking #: {trackingNo}
               </p>
-              <p className="order-details order-details__price">Price [order-total]
+              <p className="date--phone-portrait packaging-info packaging-info__date">Date: {orderDate}
+              </p>
+            </div>
+            <h3 className="packaging-info packing-info__heading">Packaging
+            </h3>
+            <div className="order-details--phone-landscape packaging-info packing-info__order-details">
+              <p className="order-details order-details__order-no">Order #: {'orderNo'}
+              </p>
+              <p className="order-details order-details__price">Price ${'orderTotal'}
               </p>
             </div>
           </div>
@@ -73,36 +103,36 @@ const OrderInvoice = () => {
             </div>
             <div className="order-summary order-summary__tracking">
               <p className="order-summary__tracking tracking-content">&lt;Shipping Status&gt; - Tracking #:
-                <a className="link">(tracking-no)
+                <a className="link">{trackingNo}
                 </a>
               </p>
             </div>
             <div className="order-summary order-summary--content">
-              <p className="content--qty order-summary__content">{1}
+              <p className="content--qty order-summary__content">{qty}
               </p>
               <div className="content--description order-summary__content w-richtext">
-                <h5>Fruity Bamm-Bamm [product-title]
+                <h5>Fruity Bamm-Bamm {productTitle}
                 </h5>
-                <p>Nicotine Strength: 6mg [nicotine-str]
+                <p>Nicotine Strength: 6mg {nicotineStr}
                 </p>
-                <p>SKU: FVVV11000001 [sku]
+                <p>SKU: FVVV11000001 {sku}
                 </p>
               </div>
-              <p className="content--price order-summary__content">$[price]
+              <p className="content--price order-summary__content">${price}
               </p>
             </div>
             <div className="order-summary order-summary--content">
-              <p className="content--qty order-summary__content">{1}
+              <p className="content--qty order-summary__content">{qty}
               </p>
               <div className="content--description order-summary__content w-richtext">
-                <h5>Fruity Bamm-Bamm [product-title]
+                <h5>Fruity Bamm-Bamm {productTitle}
                 </h5>
-                <p>Nicotine Strength: 6mg [nicotine-str]
+                <p>Nicotine Strength: 6mg {nicotineStr}
                 </p>
-                <p>SKU: FVVV11000001 [sku]
+                <p>SKU: FVVV11000001 {sku}
                 </p>
               </div>
-              <p className="content--price order-summary__content">$[price]
+              <p className="content--price order-summary__content">${price}
               </p>
             </div>
             <div className="order-summary order-summary__total">
@@ -111,10 +141,10 @@ const OrderInvoice = () => {
                 <br />Free International Shipping
                 <br />Order Total
               </p>
-              <p className="order-summary__total total--price">$[sub-total]
-                <br />$[tax]
-                <br />$[shipping]
-                <br />$[order-total]
+              <p className="order-summary__total total--price">${subTotal}
+                <br />${tax}
+                <br />${shipping}
+                <br />${orderTotal}
               </p>
             </div>
           </div>

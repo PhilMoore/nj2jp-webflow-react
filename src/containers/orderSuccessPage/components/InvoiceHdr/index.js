@@ -1,5 +1,5 @@
 import React from 'react';
-import FontAwesome from 'react-fontawesome';
+
 import { WebflowJs } from './assets/utils';
 
 const InvoiceHdr = () => {
@@ -8,8 +8,7 @@ const InvoiceHdr = () => {
   return (
     <div>
       <div className="order-success__header--mobile-land order-success__image w-container">
-        <p className="order-sucsess--image">
-          <FontAwesome name="check-circle" />
+        <p className="order-sucsess--image">
         </p>
         <div className="order-success__text">
           <h1 className="content--tablet order-success__image order-success__title">Order successfully submitted
