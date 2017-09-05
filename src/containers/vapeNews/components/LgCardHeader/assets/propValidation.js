@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 const { string } = PropTypes;
 
 export const propTypes = {
-  // x: string.isRequired,
+  x: string.isRequired,
 };
 
 export const defaultProps = {

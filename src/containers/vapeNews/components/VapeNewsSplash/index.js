@@ -16,7 +16,7 @@ const VapeNewsSplash = () => {
       <div className="news__top-article w-container">
         <SplashImg />
         <HdrPage />
-        <HdrAuthorImg />
+        {/* <HdrAuthorImg /> */}
       </div>
     </div>
   );
