@@ -2,11 +2,20 @@ import React from 'react';
 
 import { WebflowJs } from './assets/utils';
 
-const CardMoreLink = () => {
+const CardMoreLink = (props) => {
   WebflowJs(); //eslint-disable-line
+  const {
+    link,
+  } = props;
 
   return (
-    <a className="content--read-more-link news__content" href="http://www.vapingpost.com/2017/05/03/air-sampling-confirms-secondhand-vapor-is-harmless/" rel="noopener noreferrer" target="_blank">Read more...
+    <a
+      className="content--read-more-link news__content"
+      href={link}
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      Read more...
     </a>
   );
 };

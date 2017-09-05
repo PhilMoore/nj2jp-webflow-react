@@ -7,13 +7,19 @@ import {
   CardBody,
 } from '../../components';
 
-const CardArticle = () => {
+const CardArticle = (props) => {
   WebflowJs(); //eslint-disable-line
 
   return (
     <div className="masonry-column masonry-column__news">
-      <CardImg />
-      <CardBody />
+      <CardImg
+        src={props.CardImg.src}
+      />
+      <CardBody
+        header={props.CardBody.header}
+        content={props.CardBody.content}
+        link={props.CardBody.link}
+      />
     </div>
   );
 };
