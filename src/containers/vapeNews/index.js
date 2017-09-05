@@ -35,8 +35,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-18-at-21.42.05.png',
-          srcSet: 'images/Screen-Shot-2017-07-18-at-21.42.05-p-500.png 500w, images/Screen-Shot-2017-07-18-at-21.42.05.png 774w',
+          src: 'images/masonry2.png'
         },
         headerInfo: {
           href: 'http://www.japantimes.co.jp/news/2016/08/31/national/japan-tobacco-playing-catchup-nation-takes-vaping-big-way/#.WW4eOsaQ3K0',
@@ -60,8 +59,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 84vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-18-at-21.47.36.png',
-          srcSet: 'images/Screen-Shot-2017-07-18-at-21.47.36-p-500.png 500w, images/Screen-Shot-2017-07-18-at-21.47.36.png 704w',
+          src: 'images/masonry3.png',
           headerInfo: {
             href: 'http://www.japantimes.co.jp/news/2017/03/03/business/philip-morris-japan-tobacco-open-vape-stores-nationwide/#.WYBDva2Q3K2',
             header: 'Philip Morris, Japan Tobacco to open more vape stores nationwide',
@@ -85,8 +83,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-08-05-at-16.34.57.png',
-          srcSet: 'images/Screen-Shot-2017-08-05-at-16.34.57-p-500.png 500w, images/Screen-Shot-2017-08-05-at-16.34.57-p-800.png 800w, images/Screen-Shot-2017-08-05-at-16.34.57-p-1080.png 1080w, images/Screen-Shot-2017-08-05-at-16.34.57.png 1236w',
+          src: 'images/masonry8.png',
           headerInfo: {
             href: 'http://www.churnmag.com/news/absurdity-finest-new-war-vaping-goes-science/',
             header: 'The New War Against Vaping Goes Against Science',
@@ -110,8 +107,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 83vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-17-at-14.00.26.png',
-          srcSet: 'images/Screen-Shot-2017-07-17-at-14.00.26-p-500.png 500w, images/Screen-Shot-2017-07-17-at-14.00.26-p-800.png 800w, images/Screen-Shot-2017-07-17-at-14.00.26.png 974w',
+          src: 'images/masonry5.png',
           headerInfo: {
             href: 'https://www.vapingpost.com/2017/04/28/more-data-confirms-that-vaping-is-a-safer-alternative-to-smoking/',
             header: 'More data confirms that vaping is a safer alternative to smoking',
@@ -135,8 +131,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 89vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-16-at-21.58.42.png',
-          srcSet: 'images/Screen-Shot-2017-07-16-at-21.58.42-p-500.png 500w, images/Screen-Shot-2017-07-16-at-21.58.42.png 662w',
+          src: 'images/masonry1.png',
           headerInfo: {
             href: 'http://www.vapingpost.com/2017/05/03/air-sampling-confirms-secondhand-vapor-is-harmless/',
             header: 'Air Sampling confirms secondhand vapor is harmless',
@@ -160,8 +155,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-18-at-21.52.22.png',
-          srcSet: 'images/Screen-Shot-2017-07-18-at-21.52.22-p-500.png 500w, images/Screen-Shot-2017-07-18-at-21.52.22.png 800w',
+          src: 'images/masonry4.png',
           headerInfo: {
             href: 'http://www.vapingpost.com/2017/07/18/pmi-ceo-talks-about-phasing-out-cigarettes-in-japan-s-korea/',
             header: 'PMI CEO talks about phasing out cigarettes in Japan &amp; S. Korea',
@@ -185,8 +179,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-17-at-14.05.19.png',
-          srcSet: 'images/Screen-Shot-2017-07-17-at-14.05.19-p-500.png 500w, images/Screen-Shot-2017-07-17-at-14.05.19-p-800.png 800w, images/Screen-Shot-2017-07-17-at-14.05.19.png 828w',
+          src: 'images/masonry9.png',
           headerInfo: {
             href: 'https://www.vapingpost.com/2017/07/10/study-from-spain-confirms-effectivity-of-e-cigarettes/',
             header: 'Study from Spain confirms effectivity of e-cigarettes',
@@ -210,8 +203,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-18-at-18.45.16.png',
-          srcSet: 'images/Screen-Shot-2017-07-18-at-18.45.16-p-500.png 500w, images/Screen-Shot-2017-07-18-at-18.45.16-p-800.png 800w, images/Screen-Shot-2017-07-18-at-18.45.16-p-1080.png 1080w, images/Screen-Shot-2017-07-18-at-18.45.16.png 1088w',
+          src: 'images/masonry10.png',
           headerInfo: {
             href: 'http://www.churnmag.com/news/penn-st-study-vaping-cigarettes/',
             header: 'Shocking Penn State Study on Vaping and Cigarettes',
@@ -235,8 +227,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-18-at-18.49.34.png',
-          srcSet: 'images/Screen-Shot-2017-07-18-at-18.49.34-p-500.png 500w, images/Screen-Shot-2017-07-18-at-18.49.34-p-800.png 800w, images/Screen-Shot-2017-07-18-at-18.49.34.png 926w',
+          src: 'images/masonry11.png',
           headerInfo: {
             href: 'http://www.churnmag.com/news/new-study-shows-vaping-less-harmful/',
             header: 'New Study Shows Vaping Less Harmful Again',
@@ -260,8 +251,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-17-at-13.45.14.png',
-          srcSet: 'images/Screen-Shot-2017-07-17-at-13.45.14-p-500.png 500w, images/Screen-Shot-2017-07-17-at-13.45.14-p-800.png 800w, images/Screen-Shot-2017-07-17-at-13.45.14-p-1080.png 1080w, images/Screen-Shot-2017-07-17-at-13.45.14.png 1126w',
+          src: 'images/masonry7.png',
           headerInfo: {
             href: 'https://www.vapingpost.com/2016/06/05/3-facts-smokers-should-know-about-vaping/',
             header: '3 facts smokers should know about vaping',
@@ -285,8 +275,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-17-at-13.42.40.png',
-          srcSet: 'images/Screen-Shot-2017-07-17-at-13.42.40-p-500.png 500w, images/Screen-Shot-2017-07-17-at-13.42.40.png 680w',
+          src: 'images/masonry6.png',
           headerInfo: {
             href: 'https://www.vapingpost.com/2017/07/16/michigan-us-smoking-on-decline-partly-thanks-to-e-cigs/',
             header: 'Michigan US : Smoking on decline partly thanks to e-cigs',
@@ -302,31 +291,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },{
-      component: 'VapeNewsPost',
-      props: {
-        containerInfo: {
-          href: 'https://www.vapingpost.com/2017/07/16/michigan-us-smoking-on-decline-partly-thanks-to-e-cigs/',
-        },
-        imageInfo: {
-          sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/Screen-Shot-2017-07-17-at-13.42.40.png',
-          srcSet: 'images/Screen-Shot-2017-07-17-at-13.42.40-p-500.png 500w, images/Screen-Shot-2017-07-17-at-13.42.40.png 680w',
-          headerInfo: {
-            href: 'https://www.vapingpost.com/2017/07/16/michigan-us-smoking-on-decline-partly-thanks-to-e-cigs/',
-            header: 'Michigan US : Smoking on decline partly thanks to e-cigs',
-          },
-          bodyInfo: {
-            href: 'https://www.vapingpost.com/2017/07/16/michigan-us-smoking-on-decline-partly-thanks-to-e-cigs/',
-            subHdr: 'Both the number of smokers and the rates of lung cancer are on the decline, partly thanks to the advent of electronic cigarettes.',
-          },
-          authorInfo: {
-            src: 'images/IMG_7048-1-150x150.jpg',
-            width: '27',
-            text: 'By Diane Caruana',
-          },
-        },
-      },
+  
     }, ];
   return (
     <div>
