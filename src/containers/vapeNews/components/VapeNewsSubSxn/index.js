@@ -84,6 +84,9 @@ class VapeNewsSubSxn extends React.Component {
         },
       },
       HdrAuthorImg: {
+        containerInfo: {
+          className: '',
+        },
         imgInfo: {
           src: 'images/P1100442-150x150.jpg',
           width: '27',
