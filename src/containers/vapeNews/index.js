@@ -25,8 +25,24 @@ class VapeNews extends React.Component {
   componentDidMount() {
     WebflowJs(); // eslint-disable-line
   }
+  renderHelper = data =>
+  data.map((dataObj) => {
+    if (dataObj.component === 'PostListItem') {
+      return (
+        <PostListItem
+          {...dataObj.props}
+          key={new Buffer(`${dataObj.props.containerInfo.href + Date.now()}`, 'utf8').toString('base64')}
+        />
+      );
+    }
+    return ('');
+  })
 
   render() {
+    const subSxnAuthor = [{
+
+
+    }];
     const listItem = [{
       component: 'VapeNewsPost',
       props: {
@@ -35,7 +51,7 @@ class VapeNews extends React.Component {
         },
         imageInfo: {
           sizes: '(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px',
-          src: 'images/masonry2.png'
+          src: 'images/masonry2.png',
         },
         headerInfo: {
           href: 'http://www.japantimes.co.jp/news/2016/08/31/national/japan-tobacco-playing-catchup-nation-takes-vaping-big-way/#.WW4eOsaQ3K0',
@@ -99,7 +115,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },  {
+    }, {
       component: 'VapeNewsPost',
       props: {
         containerInfo: {
@@ -147,7 +163,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },{
+    }, {
       component: 'VapeNewsPost',
       props: {
         containerInfo: {
@@ -171,7 +187,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },{
+    }, {
       component: 'VapeNewsPost',
       props: {
         containerInfo: {
@@ -195,7 +211,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },{
+    }, {
       component: 'VapeNewsPost',
       props: {
         containerInfo: {
@@ -219,7 +235,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },{
+    }, {
       component: 'VapeNewsPost',
       props: {
         containerInfo: {
@@ -243,7 +259,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },{
+    }, {
       component: 'VapeNewsPost',
       props: {
         containerInfo: {
@@ -267,7 +283,7 @@ class VapeNews extends React.Component {
           },
         },
       },
-    },{
+    }, {
       component: 'VapeNewsPost',
       props: {
         containerInfo: {
@@ -291,15 +307,14 @@ class VapeNews extends React.Component {
           },
         },
       },
-  
-    }, ];
-  return (
-    <div>
-      <VapeNewsSplash />
-      <VapeNewsSubSxn />
-      <PostListItem />
-    </div>
-  );
-};
-
+    }];
+    return (
+      <div>
+        <VapeNewsSplash />
+        <VapeNewsSubSxn />
+        {this.renderHelper(listItem)}
+      </div>
+    );
+  }
+}
 export default VapeNews;

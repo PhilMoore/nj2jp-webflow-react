@@ -28,7 +28,7 @@ class MasonryNews extends React.Component {
       return (
         <CardArticle
           {...dataObj.props}
-          key={new Buffer(`${dataObj.props.CardImg + Date.now()}`, 'utf8').toString('base64')}
+          key={new Buffer(`${dataObj.props.CardImg.src + Date.now()}`, 'utf8').toString('base64')}
         />
       );
     }
@@ -61,13 +61,16 @@ class MasonryNews extends React.Component {
         },
       },
     }, {
-      CardImg: {
-        src: 'images/masonry3.png',
-      },
-      CardBody: {
-        header: 'Philip Morris, Japan Tobacco to open more vape stores nationwide<',
-        content: 'Philip Morris Japan Ltd. said Thursday that it will open a store in Tokyo’s Ginza district on Friday to sell its smokeless tobacco device iQOS.Also on Thursday, Japan Tobacco Inc. opened to the media a special shop in Fukuoka that will sell its smokeless tobacco device Ploom Tech, starting on Friday.',
-        link: 'http://www.japantimes.co.jp/news/2017/03/03/business/philip-morris-japan-tobacco-open-vape-stores-nationwide/#.WW4e6MaQ3K0',
+      component: 'CardArticle',
+      props: {
+        CardImg: {
+          src: 'images/masonry3.png',
+        },
+        CardBody: {
+          header: 'Philip Morris, Japan Tobacco to open more vape stores nationwide<',
+          content: 'Philip Morris Japan Ltd. said Thursday that it will open a store in Tokyo’s Ginza district on Friday to sell its smokeless tobacco device iQOS.Also on Thursday, Japan Tobacco Inc. opened to the media a special shop in Fukuoka that will sell its smokeless tobacco device Ploom Tech, starting on Friday.',
+          link: 'http://www.japantimes.co.jp/news/2017/03/03/business/philip-morris-japan-tobacco-open-vape-stores-nationwide/#.WW4e6MaQ3K0',
+        },
       },
     }, {
       component: 'CardArticle',

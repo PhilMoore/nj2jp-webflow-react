@@ -7,3 +7,7 @@ export LgCardImage from './LgCardImage';
 export LgCardHeader from './LgCardHeader';
 export HdrAuthorImg from './HdrAuthorImg';
 export PostListItem from './PostListItem';
+export PostImgSqr from './PostImgSqr';
+export PostBody from './PostBody';
+export PostHdrTitle from './PostHdrTitle';
+export PostBlurb from './PostBlurb';

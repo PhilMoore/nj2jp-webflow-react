@@ -5,7 +5,11 @@ import { WebflowJs } from './assets/utils';
 import {
   CardImg,
   CardBody,
-} from '../../components';
+  CardTitle,
+  CardBlurb,
+  CardMoreLink,
+}
+from '../../components';
 
 const CardArticle = (props) => {
   WebflowJs(); //eslint-disable-line
@@ -19,10 +23,21 @@ const CardArticle = (props) => {
         header={props.CardBody.header}
         content={props.CardBody.content}
         link={props.CardBody.link}
-      />
+      >
+        <div className="masonry-column__news news--content">
+          <CardTitle
+            header={props.CardTitle.header}
+          />
+          <CardBlurb
+            content={props.CardBlurb.content}
+          />
+          <CardMoreLink
+            link={props.CardMoreLink.link}
+          />
+        </div>
+      </CardBody>
     </div>
   );
 };
-
 
 export default CardArticle;
