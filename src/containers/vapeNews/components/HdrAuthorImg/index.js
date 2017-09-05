@@ -2,13 +2,22 @@ import React from 'react';
 
 import { WebflowJs } from './assets/utils';
 
-const HdrAuthorImg = () => {
+const HdrAuthorImg = (props) => {
   WebflowJs(); //eslint-disable-line
+  const {
+    imgInfo,
+    contentInfo,
+  } = props;
 
   return (
-    <div className="news__top-article top-article--author" data-ix="fade-down-3">
-      <img className="author__image" role="presentation" src="images/P1100442-150x150.jpg" width="31" />
-      <p className="author__text text--top">By Jérôme Harlay
+    <div className="dual-articles__author" data-ix="fade-down-6">
+      <img
+        className="author__image"
+        role="presentation"
+        src={imgInfo.src}
+        width={imgInfo.width}
+      />
+      <p className="author__text">{contentInfo.authorText}
       </p>
     </div>
   );
