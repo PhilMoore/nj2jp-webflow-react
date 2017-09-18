@@ -2,26 +2,23 @@ import React from 'react';
 
 import { WebflowJs } from './assets/utils';
 
-const LrgCardHeader = (props) => {
+const LgCardHeader = () => {
   WebflowJs(); //eslint-disable-line
-  const {
-    containerInfo,
-    contentInfo,
-  } = props;
 
   return (
-    <h2 className="dual-articles__heading w-clearfix" data-ix="fade-down-5">
-      <a
-        href={containerInfo.href}
-        target="_blank"
-        rel="noopener noreferrer"
-        data-ix="fade-down-5"
-        className="link-6"
-      >
-        {contentInfo.Hdr}
-      </a>
-    </h2>
+    <a
+      className="section-container__header w-inline-block"
+      data-ix="fade-down-5"
+      href="https://www.vapingpost.com/2016/08/30/japan-the-explosion-of-vaping-products-and-steady-decline-of-tobacco-cigarettes/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <h2 className="header--text text--duo">
+        Japan : steady decline of tobacco cigarettes
+      </h2>
+    </a>
   );
 };
 
-export default LrgCardHeader;
+
+export default LgCardHeader;

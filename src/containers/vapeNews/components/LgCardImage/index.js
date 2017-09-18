@@ -2,30 +2,27 @@ import React from 'react';
 
 import { WebflowJs } from './assets/utils';
 
-const LgCardImage = (props) => {
+const LgCardImage = () => {
   WebflowJs(); //eslint-disable-line
-  const {
-    containerInfo,
-    imgInfo,
-  } = props;
 
   return (
     <a
-      className={containerInfo.className}
-      href={containerInfo.href}
+      className="section-container__image-container w-inline-block"
+      data-ix="fade-down-4"
+      href="https://www.vapingpost.com/2016/08/30/japan-the-explosion-of-vaping-products-and-steady-decline-of-tobacco-cigarettes/"
       rel="noopener noreferrer"
       target="_blank"
     >
       <img
-        className={imgInfo.className}
+        className="image-container--image"
+        sizes="(max-width: 767px) 96vw, (max-width: 991px) 350px, 500px"
         role="presentation"
-        data-ix="fade-down-4"
-        sizes={imgInfo.sizes}
-        src={imgInfo.src}
-        srcSet={imgInfo.srcSet}
+        src="images/japan-tobacco-harm-reduction-1021x580-p-800.jpeg"
+        srcSet="images/japan-tobacco-harm-reduction-1021x580-p-800-p-500.jpeg 500w, images/japan-tobacco-harm-reduction-1021x580-p-800.jpeg 800w"
       />
     </a>
   );
 };
+
 
 export default LgCardImage;

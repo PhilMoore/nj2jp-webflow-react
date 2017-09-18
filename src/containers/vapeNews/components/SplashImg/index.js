@@ -6,9 +6,16 @@ const SplashImg = () => {
   WebflowJs(); //eslint-disable-line
 
   return (
-    <a className="w-inline-block" href="https://www.vapingpost.com/2017/01/24/japan-the-fear-of-secondhand-smoke-to-propagate-to-heat-not-burn-cigarettes/" rel="noopener noreferrer" target="_blank">
-      <img className="news__top-article top-article--image" role="presentation" data-ix="fade-down" sizes="(max-width: 767px) 100vw, (max-width: 991px) 728px, 940px" src="images/japan-1902834_1280-1021x580.jpg" srcSet="images/japan-1902834_1280-1021x580-p-500.jpeg 500w, images/japan-1902834_1280-1021x580-p-800.jpeg 800w, images/japan-1902834_1280-1021x580.jpg 1021w" />
-    </a>
+    <div className="top-section__image-container">
+      <img
+        className="image-container--img"
+        data-ix="fade-down-2"
+        sizes="(max-width: 767px) 100vw, (max-width: 991px) 768px, (max-width: 1021px) 100vw, 1021px"
+        role="presentation"
+        src="images/japan-1902834_1280-1021x580.jpg"
+        srcSet="images/japan-1902834_1280-1021x580-p-500.jpeg 500w, images/japan-1902834_1280-1021x580-p-800.jpeg 800w, images/japan-1902834_1280-1021x580.jpg 1021w"
+      />
+    </div>
   );
 };
 

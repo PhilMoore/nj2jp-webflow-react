@@ -12,12 +12,17 @@ const VapeNewsSplash = () => {
   WebflowJs(); //eslint-disable-line
 
   return (
-    <div className="news news__top-article">
-      <div className="news__top-article w-container">
+    <div className="news-top-section">
+      <a
+        className="top-section w-inline-block"
+        href="http://www.japantimes.co.jp/news/2016/08/31/national/japan-tobacco-playing-catchup-nation-takes-vaping-big-way/#.WW4eOsaQ3K0"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
         <SplashImg />
         <HdrPage />
-        {/* <HdrAuthorImg /> */}
-      </div>
+        <HdrAuthorImg />
+      </a>
     </div>
   );
 };

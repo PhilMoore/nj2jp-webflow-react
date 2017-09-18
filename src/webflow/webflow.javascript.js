@@ -7,5 +7,5 @@ export default () => {
   require('./masonry-reviews/js/webflow.js');
   require('./about-us/js/webflow.js');
   require('./contact-us/js/webflow.js');
-
+  require('./vape-news/js/webflow.js');
 };
