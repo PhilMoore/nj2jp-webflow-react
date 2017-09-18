@@ -9,6 +9,39 @@ import {
 const VapeNewsSubSxn = () => {
   WebflowJs(); //eslint-disable-line
 
+  const CardInfo = [{
+    component: 'SubSxnCard',
+    props: {
+      LgCardImage: {
+        href: 'https://www.vapingpost.com/2017/03/21/10-scientific-facts-about-vaping-a-vaper-should-know/',
+        src: 'images/magnifying-glass-1607160_1920-p-500.jpeg',
+      },
+      LgCardHeader: {
+        href: 'https://www.vapingpost.com/2017/03/21/10-scientific-facts-about-vaping-a-vaper-should-know/',
+        header: '10 scientific facts about vaping a vaper should know',
+      },
+      LgCardAuthor: {
+        src: 'images/P1100442-150x150.jpg',
+        text: 'By Jérôme Harlay',
+      },
+    },
+  }, {
+    component: 'SubSxnCard',
+    props: {
+      LgCardImage: {
+        href: 'https://www.vapingpost.com/2016/08/30/japan-the-explosion-of-vaping-products-and-steady-decline-of-tobacco-cigarettes/',
+        src: 'images/japan-tobacco-harm-reduction-1021x580-p-800.jpeg',
+      },
+      LgCardHeader: {
+        href: 'https://www.vapingpost.com/2016/08/30/japan-the-explosion-of-vaping-products-and-steady-decline-of-tobacco-cigarettes/',
+        header: 'Japan : steady decline of tobacco cigarettes',
+      },
+      LgCardAuthor: {
+        src: 'images/IMG_7048-1-150x150.jpg',
+        text: 'By Diane Caruana',
+      },
+    },
+  }];
   return (
     <div className="news-dual-articles">
       <SubSxnCard />
@@ -55,6 +88,5 @@ const VapeNewsSubSxn = () => {
     </div>
   );
 };
-
 
 export default VapeNewsSubSxn;

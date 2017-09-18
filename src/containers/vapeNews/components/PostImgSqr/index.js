@@ -7,17 +7,15 @@ const PostImgSqr = () => {
 
   return (
     <a
-      className="link-block w-inline-block"
+      className="article__image-container w-inline-block"
       href="http://www.japantimes.co.jp/news/2016/08/31/national/japan-tobacco-playing-catchup-nation-takes-vaping-big-way/#.WW4eOsaQ3K0"
       rel="noopener noreferrer"
       target="_blank"
     >
       <img
-        className="news__image"
+        className="image-container--feed-image"
         role="presentation"
-        sizes="(max-width: 479px) 80vw, (max-width: 767px) 27vw, (max-width: 991px) 181.578125px, 200.8125px"
-        src="images/Screen-Shot-2017-07-18-at-21.42.05.png"
-        srcSet="images/Screen-Shot-2017-07-18-at-21.42.05-p-500.png 500w, images/Screen-Shot-2017-07-18-at-21.42.05.png 774w"
+        src="images/masonry2.png"
       />
     </a>
   );

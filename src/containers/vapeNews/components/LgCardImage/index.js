@@ -18,7 +18,6 @@ const LgCardImage = () => {
         sizes="(max-width: 767px) 96vw, (max-width: 991px) 350px, 500px"
         role="presentation"
         src="images/japan-tobacco-harm-reduction-1021x580-p-800.jpeg"
-        srcSet="images/japan-tobacco-harm-reduction-1021x580-p-800-p-500.jpeg 500w, images/japan-tobacco-harm-reduction-1021x580-p-800.jpeg 800w"
       />
     </a>
   );
